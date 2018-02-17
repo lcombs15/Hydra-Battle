@@ -1,5 +1,7 @@
 # Hydra-Battle
 
+### NOTE** : It has come to my attention that some of the methods this program uses were deprecated in Java 7/8. This program will not run in Java 9 and up.
+
 This is a project I worked on in CSC364 (Data Structures & Algorithms). It works with Java generics, cloanable, JavaFX, and much more to create the Hydra Battle!
 
 The goal of the game is to defeat the hydra!
