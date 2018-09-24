@@ -56,8 +56,8 @@ public class HydraGame extends Application implements EventHandler<ActionEvent>{
 	@Override
 	public void start(Stage primaryStage){
 		//Setup GUI sizing
-		wrapper.prefHeightProperty().bind(primaryStage.heightProperty());
-		wrapper.prefWidthProperty().bind(primaryStage.widthProperty());
+		wrapper.minHeightProperty().bind(primaryStage.heightProperty());
+		wrapper.minWidthProperty().bind(primaryStage.widthProperty());
 		wrapper.getChildren().addAll(hydraCanvasArea,controlButtonArea);
 			hydraCanvasArea.prefHeightProperty().bind(wrapper.heightProperty().multiply(.80));
 			controlButtonArea.prefHeightProperty().bind(wrapper.heightProperty().multiply(.20));
@@ -92,8 +92,6 @@ public class HydraGame extends Application implements EventHandler<ActionEvent>{
 		
 		//make game maximized and update all elements inside.
 		primaryStage.setMaximized(true);
-		hydraCanvasArea.impl_updatePeer();
-		controlButtonArea.impl_updatePeer();	
 		//Set background colors and such
 		hydraCanvasArea.setStyle(CSS.hyrdaCanvasAreaStyle);
 		controlButtonArea.setStyle(CSS.controlButtonAreaStyle);
@@ -197,9 +195,6 @@ public class HydraGame extends Application implements EventHandler<ActionEvent>{
 		//Draw the relationship lines
 		this.theHydra.drawLines();
 		
-		//Push the changes to screen.
-		hydraCanvasArea.impl_updatePeer();
-		
 		//See if the game is won!
 		checkForGameWon();		
 	}
@@ -234,7 +229,6 @@ public class HydraGame extends Application implements EventHandler<ActionEvent>{
 		if(n instanceof Line){
 			n.toBack();
 		}
-		this.hydraCanvasArea.impl_updatePeer();
 	}
 	
 	//Just an off-site calculation to help break up complicated graphics calculations
