@@ -56,8 +56,8 @@ public class HydraGame extends Application implements EventHandler<ActionEvent>{
 	@Override
 	public void start(Stage primaryStage){
 		//Setup GUI sizing
-		wrapper.prefHeightProperty().bind(primaryStage.heightProperty());
-		wrapper.prefWidthProperty().bind(primaryStage.widthProperty());
+		wrapper.minHeightProperty().bind(primaryStage.heightProperty());
+		wrapper.minWidthProperty().bind(primaryStage.widthProperty());
 		wrapper.getChildren().addAll(hydraCanvasArea,controlButtonArea);
 			hydraCanvasArea.prefHeightProperty().bind(wrapper.heightProperty().multiply(.80));
 			controlButtonArea.prefHeightProperty().bind(wrapper.heightProperty().multiply(.20));
