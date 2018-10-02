@@ -2,3 +2,4 @@
 output/
 *.iml
 *.class
+test_coverage/
