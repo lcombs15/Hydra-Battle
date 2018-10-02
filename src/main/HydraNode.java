@@ -58,16 +58,15 @@ public final class HydraNode extends ActionEvent implements Cloneable, EventHand
     }
 
     /*Add a given node if and only if it is not a main.hydra body*/
-    protected void addChild(HydraNode n) {
-        if (!n.isHydraBody()) {
-            //Give the child everything it needs to know
-            this.children.add(n);
-            n.parent = this;
-            n.gameInstance = gameInstance;
-            n.heightInTree = this.heightInTree + 1;
-        } else {
+    public void addChild(HydraNode n) {
+        if (n.isHydraBody())
             throw new UnsupportedOperationException("HydraNode cannot have a body as a child.");
-        }
+
+        // Give the child everything it needs to know
+        this.children.add(n);
+        n.parent = this;
+        n.gameInstance = gameInstance;
+        n.heightInTree = this.heightInTree + 1;
     }
 
     /*Returns true if this node can be chopped (Not a body and has no children)*/
