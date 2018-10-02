@@ -1,17 +1,15 @@
 package main;
 
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.FileChooser;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
-
-import javafx.stage.FileChooser;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import main.HydraGame;
-import main.HydraNode;
 
 
 /*

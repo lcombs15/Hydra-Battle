@@ -1,31 +1,31 @@
 package main;
 
-import java.util.ArrayList;
-
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Rectangle2D;
+import javafx.geometry.VPos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.shape.Line;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.shape.Ellipse;
-import javafx.stage.Screen;
-import javafx.geometry.VPos;
-import javafx.geometry.HPos;
-import javafx.scene.Node;
-import javafx.stage.Stage;
-import javafx.scene.layout.RowConstraints;
-import javafx.event.EventHandler;
-import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.RowConstraints;
+import javafx.scene.layout.VBox;
+import javafx.scene.shape.Ellipse;
+import javafx.scene.shape.Line;
+import javafx.stage.Screen;
+import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 /*
  * Main game class

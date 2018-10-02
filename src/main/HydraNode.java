@@ -1,7 +1,5 @@
 package main;
 
-import java.util.ArrayList;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Alert;
@@ -9,6 +7,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Line;
+
+import java.util.ArrayList;
 
 /*
  * HydraNode is the basis of my Hydra data structure.
